@@ -21,7 +21,9 @@ Antes de mais nada, precisamos criar uma base de simulação que irá conter os 
 No seu terminal, dentro do diretório vacationplanner:
 
 `PYTHONPATH=planner iptyhon3`
+
 `from planner.utils import create_json_file_with_random_conditions_climate`
+
 `create_json_file_with_random_conditions_climate(ANO_DESEJADO)`
 
 ### Running
