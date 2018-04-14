@@ -36,9 +36,9 @@ Para rodar os testes da aplicação, dentro do diretório vacationplanner: `PYTH
 
 ## Authors
 
-* **Raul Martins* - [GitHub](https://github.com/rauljm) - [Linkedin](https://www.linkedin.com/in/raulmartinsj/)
+* **Raul Martins** - [GitHub](https://github.com/rauljm) - [Linkedin](https://www.linkedin.com/in/raulmartinsj/)
 
 
 ## Acknowledgments
 
-Resolvi utilizar o framework Flask para essa aplicação pois ele me pareceu ser o mais prático para uma aplicação de pequeno porte.
+Resolvi utilizar o framework Flask pois ele me pareceu ser o mais prático para uma aplicação de pequeno porte.
