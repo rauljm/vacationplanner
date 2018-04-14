@@ -1,0 +1,57 @@
+
+
+The Vacation Planner
+
+Você recebeu quinze dias de férias para tirar a qualquer momento do próximo ano e está planejando visitar o Rio de Janeiro.
+
+Para isso, você gostaria de encontrar a quinzena com a melhor temperatura possível. Encontrar esse padrão parece ser muito difícil a olho nu, então você resolve criar uma aplicação que consuma dados climáticos e sugira as melhores épocas do ano.
+ 
+* Para encontrar a lista de cidades disponíveis, você utiliza (GET) localhost:8882/cities/
+
+* Para descobrir os climas diários para um determinado ID em um determinado ano, você utiliza (GET) localhost:8882/cities/<id>/year/<ano>
+
+* Para encontrar a lista de condições climáticas existentes, você utiliza (GET) localhost:8882/weather/
+
+ 
+Sua aplicação deve ser capaz de receber informações como dias de férias, cidade-destino e intervalo de temperaturas aceitáveis para exibir todos os intervalos maiores ou iguais ao número de dias de férias inseridos que satisfaçam as características especificadas.
+
+
+
+Exemplos de entrada:
+
+1.
+
+- O usuário seleciona que tem quinze dias de férias.
+
+– O usuário seleciona a cidade como Porto Alegre
+
+– O usuário seleciona os climas desejados como Clear, Partly Cloudy, Cold
+
+ 
+- A saída mostra que, para Porto Alegre, existem pelo menos 3 combinações para o ano:
+
+- De 20 de Junho a 10 de Julho
+
+- De 09 de Maio a 26 de Maio
+
+- De 02 de Abril a 16 de Abril
+
+ 
+2.
+
+- O usuário seleciona que tem quinze dias de férias.
+
+– O usuário seleciona a cidade como Rio de Janeiro
+
+– O usuário seleciona os climas desejados como Clear, Hot, Partly Cloudy, Fair
+
+ 
+- A saída mostra que, para o Rio de Janeiro, existe pelo menos uma combinação para o ano:
+
+- De 10 a 30 de Novembro
+
+
+
+Utilize sua criatividade na hora de criar estas telas, se preocupando com a interação do usuário com sua aplicação.
+
+Você pode utilizar as bibliotecas de sua preferência, desde que estabeleça uma estratégia de gerenciamento de dependências, com instruções para a configuração e execução da aplicação com estas bibliotecas.

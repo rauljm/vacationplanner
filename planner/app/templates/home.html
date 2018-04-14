@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vacation Planner Nextel - Raul Martins</title>
+  </head>
+  <body>
+  <h3> Vacation Planner Nextel - Raul Martins </h3>
+    <form action="{{ url_for('home') }}" method=post class=add-entry>
+      <dl>
+        <dt>Dias de férias:
+        <dd><input type=text size=1 name=days>
+      </dl>
+    <p>Por favor, selecione a cidade:</p>
+      <div>
+       <ul>
+          {% for id, city in list_city %}
+              <input type="radio" id="contactChoice1" name="city_id" value="{{id}}">
+              <label for="contactChoice1">{{city}}</label>
+          {% endfor %}
+       </ul>
+      <p>Por favor, selecione os climas ideais:</p>
+       <ul>
+         {% for condition in list_conditions %}
+             <input type="checkbox" name="conditions" value="{{ condition }}"> {{condition}}<br>
+         {% endfor %}
+       </ul>
+      </p>
+       {% if best_period %}
+          <p>{{ best_period }}</p>
+       {% endif %}
+       {% if error %}
+          <p>{{ error }}</p>
+       {% endif %}
+      <div>
+        <button type="submit">Consultar</button>
+      </div>
+    </form>
+  </body>
+</html>
